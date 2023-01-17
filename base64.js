@@ -15,9 +15,9 @@ const header = {
 }
 
 const headerString = JSON.stringify(header);
-console.log(headerString); // String
+console.log("1",headerString); // String
 
-const buf2 = Buffer.from(headerString).toString("base64");
+const buf2 = Buffer.from(headerString).toString("base64url");
 console.log(buf2); // 64 Encoded
 
 const json = Buffer.from("eyJhbGciOiJIUzI1NiIsInR5cGUiOiJKV1QifQ==", "base64").toString("utf8")
